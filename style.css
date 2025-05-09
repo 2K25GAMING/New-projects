@@ -1,8 +1,9 @@
 h1{
+    font-style: italic;
     color: gold;
 }
 p{
     font-style: italic;
-    font-size: medium;
+    font-size: large;
     font: bold;
 }
