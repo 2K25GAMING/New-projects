@@ -4,15 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2K25 GAMING</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif; background: #f2f2f2;
+        display: flex; flex-direction: column; align-items: center;padding: 40px 20px;}
+        h2{
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input[type="password"] {padding: 10px; width: 80%; max-width: 300px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 10px;}
+        button{
+            padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; font-size:  16px;
+            cursor: pointer;
+        }
+        button:hover{background-color: #45a049;}.mod-block { display: none; margin-top: 30px; padding: 20px; border-radius: 10px ; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center;}.mod-block a{
+            display: inline-block; margin-top: 10px; text-decoration: none; background-color: #2196f3; color: white; padding: 10px 20px; border-radius: 6px; font-weight: bold;}
+            .mod-block a:hover { background-color: #1976d2;} 
+    </style>
 </head>
 <body>
-    <h1>2K25 GAMING CHANNEL OFFICIAL PAGE</h1>
+    <div>
+        <h1>2K25 GAMING CHANNEL OFFICIAL PAGE</h1>
     <h1>CREATED BY MARAN</h1>
     <img width="200px" src="profile.png.png" alt="">
     <p>HI THIS IS A OFFICIAL PAGE OF 2K25 GAMING CHANNEL AND YOU ARE HERE TO DOWNLOAD THE BUSSID LIVERIES AND MODS UPLOAD BY THEM</p>
     <P>NOW THERE IS NO LIVERIES AND MODS UPLOADED AS SOON I WILL UPLOAD THE LIVERIES</P> 
     <p>THANKS FOR YOUR SUPPORT</p>
     <p> SUBSCRIBE FOR MORE VEDIOS AND LIVERIES AND MODS</p>
+    </div>
+    <h2>ENTER A PASSWORD TO ACCESS THE FILES</h2>
+    <input type="password" id="passwordinput" placeholder="ENTER PASSWORD">
+    <button onclick="checkpassword()">unlock</button>
+    <div id="bus livery" class="mod-block">
+        <h3>bus livery</h3>
+        <a href="http://drive.google.com/uc?id=1--FNdfCg4CycuGpJRdJtHL9obVhJtyTE&export=download" target="_blank">DOWNLOAD BUS LIVERY</a>
+    </div>
+    <Script>
+        function checkpassword() {
+            const pw =
+            document.getElementById('passwordinput').value;
+            if (pw === '2468') {
+                document.getElementById('bus livery').style.display ='block';
+            } else {
+                alert('incorrect password');
+            }
+        }
+    </Script>
 </body>
 </html>
